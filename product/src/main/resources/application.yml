@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productdb
+    username: postgres
+    password: yourpassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+cloudinary:
+  cloud-name: dyxxksuj5
+  api-key: 931514763775283
+  api-secret: AV8TdWcRCis7LwU4z-orJcrSFkU
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.yourcompany.product: DEBUG
