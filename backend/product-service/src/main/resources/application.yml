@@ -14,6 +14,14 @@ spring:
       hibernate:
         format_sql: true
 
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    deserialization:
+      fail-on-unknown-properties: false
+    mapper:
+      accept-case-insensitive-enums: true
+
+
 cloudinary:
   cloud-name: dyxxksuj5
   api-key: 931514763775283
@@ -23,3 +31,4 @@ logging:
   level:
     org.springframework.web: DEBUG
     com.yourcompany.product: DEBUG
+

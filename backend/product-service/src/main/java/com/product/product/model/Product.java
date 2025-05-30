@@ -7,6 +7,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "products")
@@ -32,4 +33,10 @@ public class Product {
 
     @Column(name = "product_image_url")
     private String productImage;
+
+    @Column(name = "expiryDate")
+    private LocalDateTime expiryDateTime;
+
+    @Column(name = "createdAt")
+    private LocalDateTime created;
 }
